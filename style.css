@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@1,700&display=swap');
+
+:root{
+    --font1:font-family: 'Barlow', sans-serif;
+    --font2:font-family: 'Fraunces', serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav.container {
+  background-image: url("./images/mobile/image-header.jpg");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.4rem;
+}
+
+nav div.logo-sec img {
+  height: 1.7rem;
+}
+
+#hamburger {
+  height: 1.3rem;
+}
+#hamburger:hover {
+  cursor: pointer;
+}
+
+nav ul {
+      background-color: white;
+    width: 83%;
+    height: 18rem;
+    margin: auto;
+    position: relative;
+        top: -0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 100% 0, 100% 0, 89% 9%, 0 9%);
+    display: none;
+}
+
+ul.show{
+    display: flex;
+}
+
+nav ul li {
+     list-style: none;
+    margin: 1.3rem;
+    width: 7rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav ul li:first-child{
+    margin-top: 2.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: hsl(210, 18%, 47%);
+  font-family: var(--font1);
+      font-weight: 200;
+}
+
+nav ul li:hover{
+    background-color: rgb(253, 253, 28);
+    border-radius: 1.5rem;
+    
+}
+nav ul li a:hover{
+    color: black;
+}
+
+nav div.text-block{
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+nav div.text-block h2{
+    font-size: 3rem;
+    color: white;
+    font-family:'Fraunces', serif;;
+    text-transform: uppercase;
+}
+
+nav div.text-block img{
+    margin-top: 4rem;
+}
+
+div.hide{
+    display: none;
+}
+
+section .img-block img{
+  width: 100%;
+}
+section .tex-block{
+  width: 100%;
+  height: 400px;
+      display: flex;
+    flex-direction: column;
+
+}
+section .tex-block h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--font1);
+    margin:2rem 0;
+        letter-spacing: -3px;
+    color: hsl(212, 27%, 19%);
+}
+
+section .tex-block p{
+      padding: 0 1.7rem;
+    text-align: center;
+    line-height: 28px;
+    color: hsl(232, 10%, 55%);
+        font-family: sans-serif;
+    font-weight: 700;
+}
+
+section .tex-block h5{
+      text-align: center;
+       padding-top: 2rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 6px solid yellow;
+        width: 10rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+section .tex-block h5:hover{
+  cursor: pointer;
+  color:rgb(70, 69, 69);
+}
+
+section.section2 .tex-block h5{
+      text-align: center;
+       padding-top: 2rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 6px solid palevioletred;
+        width: 10rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+section.section3{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+section.section3 .box1{
+  background-image: url('./images/mobile/image-graphic-design.jpg');
+    background-size: cover;
+    height: 500px;
+}
+
+section.section3 .box1 h5{
+      text-align: center;
+    padding-top: 21rem;
+    font-size: 2.2rem;
+    font-family: fraunces;
+        opacity: 0.6;
+}
+
+section.section3 .box1 p{
+      text-align: center;
+    padding-top: 2rem;
+        opacity: 0.7;
+            font-family: sans-serif;
+    font-weight: 700;
+ }
+section.section3 .box2{
+      background-image: url('./images/mobile/image-photography.jpg');
+    background-size: cover;
+    height: 500px;
+}
+
+section.section3 .box2 h5{
+      text-align: center;
+    padding-top: 21rem;
+    font-size: 2.2rem;
+    font-family: fraunces;
+        opacity: 0.6;
+}
+
+section.section3 .box2 p{
+      text-align: center;
+    padding-top: 2rem;
+        opacity: 0.7;
+            font-family: sans-serif;
+    font-weight: 700;
+}
+
+section.section4 .main-container{
+  margin-top: 3rem;
+}
+
+section.section4  h4{
+  text-align: center;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    color:hsl(232, 10%, 55%) ;
+    margin-top: 3rem;
+}
+
+section.section4 .main-container .person{
+  display: flex;
+  justify-content: center;
+}
+
+section.section4 .main-container .person img{
+      border-radius: 50%;
+    height: 6rem;
+}
+
+section.section4 .main-container .person-cont p{
+  text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    width: 92%;
+    margin-left: 1rem;
+    color:hsl(233, 8%, 43%) ;
+        line-height: 1.35rem;
+      font-family:sans-serif;
+          font-weight: 700;
+}
+section.section4 .main-container .person-cont h3{
+  text-align: center;
+    margin-top: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    font-size: 1.6rem;
+    font-family: var(--font1);
+}
+section.section4 .main-container .person-cont h4{
+  margin: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0px;
+}
+
+section.section4 .main-container .person-cont{
+  margin-top: 4.5rem;
+}
+
+section.section5{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+}
+section.section5 .box1{
+      background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.section5 .box2{
+background-image: url('./images/mobile/image-gallery-orange.jpg');
+height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section.section5 .box3{
+background-image: url('./images/mobile/image-gallery-cone.jpg');
+height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section.section5 .box4{
+  background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+  height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+footer{
+  background-color: hsl(168, 34%, 41%);
+  height: 250px;
+  position: relative;
+}
+footer h1{
+    color: hsl(169, 40%, 10%);
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+footer h1:hover{
+  cursor: pointer;
+}
+
+footer ul{
+      display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+footer ul li{
+  list-style: none;
+      font-size: 1.2rem;
+    color:  hsl(170, 29%, 16%);
+}
+
+footer ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+
+footer ul.social{
+  display: flex;
+  justify-content: center;
+}
+
+footer ul.social li{
+  margin-left: 30px;
+}
+
+footer ul.social li:hover{
+background: white;
+}
+
+
+/* Desktop Design */
+@media (min-width:1000px){
+  nav.container{
+    background-image: url('./images/desktop/image-header.jpg');
+    height: 43rem;
+  }nav div.logo-sec img {
+    height: 2.7rem;
+}#hamburger {
+    display: none;
+}
+
+nav .navbar{
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}nav ul{
+      height: 4rem;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0px;
+    align-items: center;
+ }
+ nav ul li{
+   margin: 0.5rem;
+ }
+  nav ul li:first-child{
+   margin-top: 9px;
+  }nav ul li a{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }nav ul li:hover{
+    background:none;
+  }nav ul li a:hover{
+    color: rgb(224, 221, 221);
+  }nav ul li:last-child{
+        border-radius: 12px;
+    background: white;
+    height: 29px;
+    padding-top: 6px;
+  }#last{
+    color: black;
+  }nav ul li:last-child:hover{
+    background: rgb(52, 255, 255);
+  }nav div.text-block {
+    margin-top: 3rem;
+}
+  nav div.text-block h2 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+}nav div.text-block img {
+    height: 7rem;
+    margin-top: 2rem;
+}section.section1 {
+    display: flex;
+    flex-direction: row-reverse;
+}section .tex-block{
+  width: 50%;
+  height: auto;
+}section .img-block1{
+  width: 50%;
+  background-image: url('./images/desktop/image-transform.jpg');
+
+}section .img-block img{
+  display: none;
+}
+section .tex-block p{
+  width: 54%;
+    margin-left: 8rem;
+    text-align: inherit;
+}section .tex-block h1{
+      width: 56%;
+    margin-left: 9.2rem;
+    text-align: inherit;
+    margin-top: 5rem;
+}
+section .tex-block h5{
+ margin-bottom: 10rem;
+}
+section.section2{
+  display: flex;
+  flex-direction: row;
+}section.section2 .img-block2{
+  width: 50%;
+  background-image: url('./images/desktop/image-stand-out.jpg');
+}section.section2 .tex-block h5{
+  margin-bottom: 10rem;
+}section.section3 {
+  grid-template-columns: repeat(2,1fr);
+}section.section3 .box1{
+  background-image: url('./images/desktop/image-graphic-design.jpg');
+}section.section3 .box1 p{
+      width: 50%;
+    margin-left: 11rem;
+}section.section3 .box2{
+  background-image: url('./images/desktop/image-photography.jpg');
+}section.section3 .box2 p{
+      width: 50%;
+    margin-left: 11rem;
+}section.section4 .main-container {
+  display: flex;
+}
+section.section4 .main-container .person-cont {
+    margin-top: 4.5rem;
+    margin: 0 4rem;
+}section.section5{
+  grid-template-columns: repeat(4,1fr);
+}section.section5 .box{
+  height: 350px;
+}
+section.section5 box1{
+  background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+}section.section5 box2{
+  background-image: url('./images/desktop/image-gallery-orange.jpg');
+}section.section5 box1{
+  background-image: url('./images/desktop/image-gallery-cone.jpg');
+}section.section5 box1{
+  background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
+}footer ul{
+      justify-content: center;
+}
+footer ul li{
+  margin-left:3rem
+}
+
+}
+
+@media (min-width:760px) {
+  nav div.text-block{
+    margin-top: 4rem;
+   
+    
+  }nav div.text-block img{
+    height: 15rem;
+  }nav div.text-block h2{
+    font-size: 5rem;
+     letter-spacing: 5px;
+  }
+  
+}
